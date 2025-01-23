@@ -5,6 +5,7 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <form #ingresar="ngForm" (ngSubmit)="login(ingresar)">
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">login</ion-title>
@@ -13,16 +14,17 @@
   
   <ion-list>
   <ion-item>
-    <ion-input [(ngModel)]="email" label="Correo Electronico" labelPlacement="stacked" placeholder="example@gmail.com"></ion-input>
+    <ion-input name="email" [(ngModel)]="email" label="Correo Electronico" labelPlacement="stacked" placeholder="example@gmail.com"></ion-input>
   </ion-item>
 
   <ion-item>
-    <ion-input [(ngModel)]="password" label="Contraseña" labelPlacement="floating" type="password"></ion-input>
+    <ion-input name = "password" [(ngModel)]="password" label="Contraseña" labelPlacement="floating" type="password"></ion-input>
   </ion-item>
 </ion-list>
+<br>
+<ion-button type="submit" expand="block">
+  Ingresar
+</ion-button>
+</form>
 
-  <br>
-  <ion-button (click)="login()" expand="block">
-    Ingresar
-  </ion-button>
 </ion-content>
