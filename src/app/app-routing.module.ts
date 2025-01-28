@@ -15,10 +15,19 @@ const routes: Routes = [
     loadChildren: () => import('./badges/badges.module').then( m => m.BadgesPageModule)
   },
   {
+    path: 'signup',
+    loadChildren: () => import('./signup/signup.module').then( m => m.SignupPageModule)
+  },
+  {
+    path: 'cards',
+    loadChildren: () => import('./cards/cards.module').then( m => m.CardsPageModule)
+  },
+  {
     path: '',
     redirectTo: 'login',
     pathMatch: 'full'
   },
+
 ];
 
 @NgModule({
