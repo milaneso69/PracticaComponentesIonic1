@@ -23,10 +23,15 @@ const routes: Routes = [
     loadChildren: () => import('./cards/cards.module').then( m => m.CardsPageModule)
   },
   {
+    path: 'photos',
+    loadChildren: () => import('./photos/photos.module').then( m => m.PhotosPageModule)
+  },
+  {
     path: '',
     redirectTo: 'login',
     pathMatch: 'full'
   },
+
 
 ];
 
