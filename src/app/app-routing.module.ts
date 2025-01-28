@@ -27,10 +27,15 @@ const routes: Routes = [
     loadChildren: () => import('./photos/photos.module').then( m => m.PhotosPageModule)
   },
   {
+    path: 'chat',
+    loadChildren: () => import('./chat/chat.module').then( m => m.ChatPageModule)
+  },
+  {
     path: '',
     redirectTo: 'login',
     pathMatch: 'full'
   },
+
 
 
 ];
