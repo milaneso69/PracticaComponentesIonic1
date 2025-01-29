@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChatPage implements OnInit {
 
+  chat: any[] = [1,2,3,4,5,6,7,8,9,0];
+
   constructor() { }
 
   ngOnInit() {

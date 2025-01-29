@@ -1,24 +1,32 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-buttons slot="secondary">
-      <ion-button>
+      <ion-button color="secondary">
         <ion-icon slot="icon-only" name="person-circle"></ion-icon>
       </ion-button>
-      <ion-button>
+      <ion-button color="tertiary">
         <ion-icon slot="icon-only" name="search"></ion-icon>
       </ion-button>
     </ion-buttons>
     <ion-buttons slot="primary">
-      <ion-button>
+      <ion-button color="danger">
         <ion-icon slot="icon-only" ios="ellipsis-horizontal" md="ellipsis-vertical"></ion-icon>
       </ion-button>
-    </ion-buttons>
-    <ion-title>Icon Buttons</ion-title>
+    </ion-buttons>  
+    <ion-title>ChatApp</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-list>
-    
-  </ion-list>
+
+    <ion-list>
+      <app-item-chat
+      *ngFor="let chat of chat"
+      [username]="chat"
+      message="loremipsum"
+      date="13:44"
+      avatarUrl="https://ionicframework.com/docs/img/demos/avatar.svg"
+      ></app-item-chat>
+      </ion-list>
+ 
 </ion-content>
