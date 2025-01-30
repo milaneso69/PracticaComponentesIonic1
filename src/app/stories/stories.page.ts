@@ -4,6 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-stories',
   templateUrl: './stories.page.html',
   styleUrls: ['./stories.page.scss'],
+  standalone: false,
 })
 export class StoriesPage implements OnInit {
 
