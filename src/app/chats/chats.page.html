@@ -18,6 +18,7 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+
     <ion-list>
       <app-item-chat
       *ngFor="let chat of chat"
@@ -27,4 +28,5 @@
       [avatarUrl]="chat.avatarUrl"
       ></app-item-chat>
       </ion-list>
+ 
 </ion-content>
