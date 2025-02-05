@@ -4,13 +4,15 @@ import { LayoutComponent } from './layout/layout.component';
 import { IonicModule } from '@ionic/angular';
 import { CardPostComponent } from './card-post/card-post.component';
 import { AvatarComponent } from './avatar/avatar.component';
+import { ForminicioComponent } from './forminicio/forminicio.component';
 
 
 @NgModule({
   declarations: [
     LayoutComponent,
     CardPostComponent,
-    AvatarComponent
+    AvatarComponent,
+    ForminicioComponent
   ],
   imports: [
     CommonModule,
@@ -19,7 +21,8 @@ import { AvatarComponent } from './avatar/avatar.component';
   exports: [
     LayoutComponent,
     CardPostComponent,
-    AvatarComponent
+    AvatarComponent,
+    ForminicioComponent
   ]
 })
 export class ComponentsModule { }
